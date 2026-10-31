@@ -1,0 +1,77 @@
+=== EDA DATASET SUPERSTORE (setelah cleaning) ===
+Baris x kolom : 9,993 x 30
+Rentang tanggal: 2014-01-03 s/d 2017-12-30
+
+--- Statistik deskriptif (numerik) ---
+          Sales  Quantity  Discount   Profit  Profit Margin (%)  Ship Days
+count   9993.00   9993.00   9993.00  9993.00            9993.00    9993.00
+mean     229.85      3.79      0.16    28.66              12.03       3.96
+std      623.28      2.23      0.21   234.27              46.68       1.75
+min        0.44      1.00      0.00 -6599.98            -275.00       0.00
+25%       17.28      2.00      0.00     1.73               7.50       3.00
+50%       54.48      3.00      0.20     8.67              27.00       4.00
+75%      209.94      5.00      0.20    29.36              36.25       5.00
+max    22638.48     14.00      0.80  8399.98              50.00       7.00
+
+--- Skewness (kemiringan distribusi) ---
+Sales                12.97
+Quantity              1.28
+Discount              1.68
+Profit                7.56
+Profit Margin (%)    -2.89
+Ship Days            -0.42
+
+--- Korelasi Pearson ---
+                   Sales  Quantity  Discount  Profit  Profit Margin (%)  Ship Days
+Sales               1.00      0.20     -0.03    0.48               0.00      -0.01
+Quantity            0.20      1.00      0.01    0.07              -0.01       0.02
+Discount           -0.03      0.01      1.00   -0.22              -0.86       0.00
+Profit              0.48      0.07     -0.22    1.00               0.22      -0.00
+Profit Margin (%)   0.00     -0.01     -0.86    0.22               1.00      -0.01
+Ship Days          -0.01      0.02      0.00   -0.00              -0.01       1.00
+
+--- Frekuensi Category ---
+Category
+Office Supplies    6026
+Furniture          2120
+Technology         1847
+
+--- Frekuensi Segment ---
+Segment
+Consumer       5191
+Corporate      3020
+Home Office    1782
+
+--- Frekuensi Region ---
+Region
+West       3203
+East       2847
+Central    2323
+South      1620
+
+--- Frekuensi Ship Mode ---
+Ship Mode
+Standard Class    5967
+Second Class      1945
+First Class       1538
+Same Day           543
+
+--- Frekuensi Discount Band ---
+Discount Band
+0%        4798
+11-20%    3709
+>50%       856
+31-50%     310
+21-30%     226
+1-10%       94
+
+--- KPI keseluruhan ---
+Total penjualan: $2.30M | Total profit: $286.4K | Margin: 12.5%
+
+--- Insight otomatis ---
+* Kontribusi dan margin per kategori: Kategori Technology menyumbang $836.2K (36.4% penjualan) dengan margin 17.4%. Margin terendah ada pada Furniture (2.5%).
+* Sub-kategori terbaik dan yang merugi: Sub-kategori paling menguntungkan: Copiers ($55.6K). 3 sub-kategori mencatat profit negatif, terbesar: Tables, Bookcases, Supplies (total -$22.4K).
+* Diskon tinggi dan profitabilitas: Baris transaksi dengan diskon >20% (1,392 baris) memiliki margin agregat -37.3% dan 96.8% di antaranya merugi, dibanding margin 21.8% dan 6.1% merugi pada diskon <=20%. Ini asosiasi pada data; faktor lain (jenis produk, wilayah) tidak dikendalikan.
+* Perbedaan kinerja antarwilayah: Penjualan terbesar dari wilayah West ($725.5K). Margin tertinggi di West (14.9%) dan terendah di Central (7.9%).
+* Pola musiman: Bulan Nov memiliki akumulasi penjualan tertinggi ($352.5K, 15.3% dari total pada filter ini).
+* Komposisi segmen pelanggan: Segmen Consumer mendominasi dengan 50.6% penjualan dan margin 11.5%.

@@ -1,0 +1,50 @@
+{
+  "rows_raw": 9994,
+  "cols_raw": 21,
+  "dtypes_raw": {
+    "Row ID": "int64",
+    "Order ID": "str",
+    "Order Date": "str",
+    "Ship Date": "str",
+    "Ship Mode": "str",
+    "Customer ID": "str",
+    "Customer Name": "str",
+    "Segment": "str",
+    "Country": "str",
+    "City": "str",
+    "State": "str",
+    "Postal Code": "int64",
+    "Region": "str",
+    "Product ID": "str",
+    "Category": "str",
+    "Sub-Category": "str",
+    "Product Name": "str",
+    "Sales": "float64",
+    "Quantity": "int64",
+    "Discount": "float64",
+    "Profit": "float64"
+  },
+  "missing_raw": {},
+  "duplicates_removed": 1,
+  "rows_dropped_missing_critical": 0,
+  "rows_dropped_invalid": 0,
+  "outliers_flagged": {
+    "Sales": 1167,
+    "Profit": 1881
+  },
+  "rows_clean": 9993,
+  "cols_clean": 30,
+  "date_range": [
+    "2014-01-03",
+    "2017-12-30"
+  ],
+  "categorical_unique": {
+    "Ship Mode": 4,
+    "Segment": 3,
+    "Region": 4,
+    "State": 49,
+    "Category": 3,
+    "Sub-Category": 17
+  },
+  "raw_file": "Sample - Superstore.csv"
+}
