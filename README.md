@@ -79,7 +79,7 @@ streamlit run app.py
 4. Pilih repositori, branch `main`, file utama `app.py`, lalu **Deploy**.
 
 ## 14. Deployment URL
-Belum dipublikasikan. Isi setelah deploy berhasil dan diverifikasi.
+https://utsvisualisasidata-rybykfntujkapk7uy3nl5s.streamlit.app/
 
 ## 15. GitHub Repository URL
-Belum dipublikasikan. Isi setelah repositori dibuat.
+https://github.com/HarisAidhin/uts_visualisasidata/
